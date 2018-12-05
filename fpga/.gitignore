@@ -1,0 +1,17 @@
+simu
+*.swp
+sw/build/*
+imperio
+ipstools
+*.cache/
+*.hw/
+*.runs/
+*.srcs/
+*.ip_user_files/
+*.xpr
+vivado*jou
+vivado*log
+.Xil/
+*.bin
+*.txt
+*.prm

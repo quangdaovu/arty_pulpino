@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="riscv_defines" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1754000000001fs"></ZoomEndTime>
+      <Cursor1Time time="442000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="236"></NameColumnWidth>
+      <ValueColumnWidth column_width="69"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject type="logic" fp_name="/tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/fetch_en">
+      <obj_property name="ElementShortName">fetch_en</obj_property>
+      <obj_property name="ObjectShortName">fetch_en</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group145">
+      <obj_property name="label">fpga_top_if</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb/uart_tx">
+         <obj_property name="ElementShortName">uart_tx</obj_property>
+         <obj_property name="ObjectShortName">uart_tx</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/uart_rx">
+         <obj_property name="ElementShortName">uart_rx</obj_property>
+         <obj_property name="ObjectShortName">uart_rx</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/qspi_dq">
+         <obj_property name="ElementShortName">qspi_dq[3:0]</obj_property>
+         <obj_property name="ObjectShortName">qspi_dq[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/sw">
+         <obj_property name="ElementShortName">sw[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sw[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/btn">
+         <obj_property name="ElementShortName">btn[3:0]</obj_property>
+         <obj_property name="ObjectShortName">btn[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/led">
+         <obj_property name="ElementShortName">led[3:0]</obj_property>
+         <obj_property name="ObjectShortName">led[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group87">
+      <obj_property name="label">boot_rom</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/instr_mem/boot_rom_wrap_i/en_i">
+         <obj_property name="ElementShortName">en_i</obj_property>
+         <obj_property name="ObjectShortName">en_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/instr_mem/boot_rom_wrap_i/addr_i">
+         <obj_property name="ElementShortName">addr_i[11:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_i[11:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/instr_mem/boot_rom_wrap_i/boot_code_i/A">
+         <obj_property name="ElementShortName">A[9:0]</obj_property>
+         <obj_property name="ObjectShortName">A[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/instr_mem/boot_rom_wrap_i/boot_code_i/Q">
+         <obj_property name="ElementShortName">Q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group156">
+      <obj_property name="label">instr_memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/instr_mem/sp_ram_wrap_i/en_i">
+         <obj_property name="ElementShortName">en_i</obj_property>
+         <obj_property name="ObjectShortName">en_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/instr_mem/sp_ram_wrap_i/addr_i">
+         <obj_property name="ElementShortName">addr_i[14:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_i[14:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/instr_mem/sp_ram_wrap_i/wdata_i">
+         <obj_property name="ElementShortName">wdata_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wdata_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/instr_mem/sp_ram_wrap_i/we_i">
+         <obj_property name="ElementShortName">we_i</obj_property>
+         <obj_property name="ObjectShortName">we_i</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group157">
+      <obj_property name="label">data_memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/data_mem/addra">
+         <obj_property name="ElementShortName">addra[12:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[12:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/data_mem/dina">
+         <obj_property name="ElementShortName">dina[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/data_mem/ena">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/data_mem/wea">
+         <obj_property name="ElementShortName">wea[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group166">
+      <obj_property name="label">apb_pulpino</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_pulpino_i/HCLK">
+         <obj_property name="ElementShortName">HCLK</obj_property>
+         <obj_property name="ObjectShortName">HCLK</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_pulpino_i/PADDR">
+         <obj_property name="ElementShortName">PADDR[11:0]</obj_property>
+         <obj_property name="ObjectShortName">PADDR[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_pulpino_i/PWDATA">
+         <obj_property name="ElementShortName">PWDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PWDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_pulpino_i/PWRITE">
+         <obj_property name="ElementShortName">PWRITE</obj_property>
+         <obj_property name="ObjectShortName">PWRITE</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_pulpino_i/PSEL">
+         <obj_property name="ElementShortName">PSEL</obj_property>
+         <obj_property name="ObjectShortName">PSEL</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_pulpino_i/PENABLE">
+         <obj_property name="ElementShortName">PENABLE</obj_property>
+         <obj_property name="ObjectShortName">PENABLE</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_pulpino_i/boot_addr_o">
+         <obj_property name="ElementShortName">boot_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">boot_addr_o[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#A52A2A</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group83">
+      <obj_property name="label">apb_spi_master</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/PADDR">
+         <obj_property name="ElementShortName">PADDR[11:0]</obj_property>
+         <obj_property name="ObjectShortName">PADDR[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/PWRITE">
+         <obj_property name="ElementShortName">PWRITE</obj_property>
+         <obj_property name="ObjectShortName">PWRITE</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/PWDATA">
+         <obj_property name="ElementShortName">PWDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PWDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/PSEL">
+         <obj_property name="ElementShortName">PSEL</obj_property>
+         <obj_property name="ObjectShortName">PSEL</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/PRDATA">
+         <obj_property name="ElementShortName">PRDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PRDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/PREADY">
+         <obj_property name="ElementShortName">PREADY</obj_property>
+         <obj_property name="ObjectShortName">PREADY</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/PRDATA">
+         <obj_property name="ElementShortName">PRDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PRDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/PREADY">
+         <obj_property name="ElementShortName">PREADY</obj_property>
+         <obj_property name="ObjectShortName">PREADY</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/PSLVERR">
+         <obj_property name="ElementShortName">PSLVERR</obj_property>
+         <obj_property name="ObjectShortName">PSLVERR</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group84">
+         <obj_property name="label">SPI_if</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_csn0">
+            <obj_property name="ElementShortName">spi_csn0</obj_property>
+            <obj_property name="ObjectShortName">spi_csn0</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_mode">
+            <obj_property name="ElementShortName">spi_mode[1:0]</obj_property>
+            <obj_property name="ObjectShortName">spi_mode[1:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_clk">
+            <obj_property name="ElementShortName">spi_clk</obj_property>
+            <obj_property name="ObjectShortName">spi_clk</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_sdo0">
+            <obj_property name="ElementShortName">spi_sdo0</obj_property>
+            <obj_property name="ObjectShortName">spi_sdo0</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_sdo1">
+            <obj_property name="ElementShortName">spi_sdo1</obj_property>
+            <obj_property name="ObjectShortName">spi_sdo1</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_sdo2">
+            <obj_property name="ElementShortName">spi_sdo2</obj_property>
+            <obj_property name="ObjectShortName">spi_sdo2</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_sdo3">
+            <obj_property name="ElementShortName">spi_sdo3</obj_property>
+            <obj_property name="ObjectShortName">spi_sdo3</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_sdi0">
+            <obj_property name="ElementShortName">spi_sdi0</obj_property>
+            <obj_property name="ObjectShortName">spi_sdi0</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_sdi1">
+            <obj_property name="ElementShortName">spi_sdi1</obj_property>
+            <obj_property name="ObjectShortName">spi_sdi1</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_sdi2">
+            <obj_property name="ElementShortName">spi_sdi2</obj_property>
+            <obj_property name="ObjectShortName">spi_sdi2</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/apb_spi_master_i/spi_sdi3">
+            <obj_property name="ElementShortName">spi_sdi3</obj_property>
+            <obj_property name="ObjectShortName">spi_sdi3</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group135">
+      <obj_property name="label">apb_uart</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/CLK">
+         <obj_property name="ElementShortName">CLK</obj_property>
+         <obj_property name="ObjectShortName">CLK</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/RSTN">
+         <obj_property name="ElementShortName">RSTN</obj_property>
+         <obj_property name="ObjectShortName">RSTN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/PSEL">
+         <obj_property name="ElementShortName">PSEL</obj_property>
+         <obj_property name="ObjectShortName">PSEL</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/PENABLE">
+         <obj_property name="ElementShortName">PENABLE</obj_property>
+         <obj_property name="ObjectShortName">PENABLE</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/PWRITE">
+         <obj_property name="ElementShortName">PWRITE</obj_property>
+         <obj_property name="ObjectShortName">PWRITE</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/PADDR">
+         <obj_property name="ElementShortName">PADDR[2:0]</obj_property>
+         <obj_property name="ObjectShortName">PADDR[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/PWDATA">
+         <obj_property name="ElementShortName">PWDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PWDATA[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/PRDATA">
+         <obj_property name="ElementShortName">PRDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PRDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/PREADY">
+         <obj_property name="ElementShortName">PREADY</obj_property>
+         <obj_property name="ObjectShortName">PREADY</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/PSLVERR">
+         <obj_property name="ElementShortName">PSLVERR</obj_property>
+         <obj_property name="ObjectShortName">PSLVERR</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/INT">
+         <obj_property name="ElementShortName">INT</obj_property>
+         <obj_property name="ObjectShortName">INT</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/OUT1N">
+         <obj_property name="ElementShortName">OUT1N</obj_property>
+         <obj_property name="ObjectShortName">OUT1N</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/OUT2N">
+         <obj_property name="ElementShortName">OUT2N</obj_property>
+         <obj_property name="ObjectShortName">OUT2N</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/RTSN">
+         <obj_property name="ElementShortName">RTSN</obj_property>
+         <obj_property name="ObjectShortName">RTSN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/DTRN">
+         <obj_property name="ElementShortName">DTRN</obj_property>
+         <obj_property name="ObjectShortName">DTRN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/CTSN">
+         <obj_property name="ElementShortName">CTSN</obj_property>
+         <obj_property name="ObjectShortName">CTSN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/DSRN">
+         <obj_property name="ElementShortName">DSRN</obj_property>
+         <obj_property name="ObjectShortName">DSRN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/DCDN">
+         <obj_property name="ElementShortName">DCDN</obj_property>
+         <obj_property name="ObjectShortName">DCDN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/RIN">
+         <obj_property name="ElementShortName">RIN</obj_property>
+         <obj_property name="ObjectShortName">RIN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/SIN">
+         <obj_property name="ElementShortName">SIN</obj_property>
+         <obj_property name="ObjectShortName">SIN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/peripherals_i/i_apb_uart/SOUT">
+         <obj_property name="ElementShortName">SOUT</obj_property>
+         <obj_property name="ObjectShortName">SOUT</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group148">
+      <obj_property name="label">riscv_core</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/id_stage_i/controller_i/ctrl_fsm_cs">
+         <obj_property name="ElementShortName">ctrl_fsm_cs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">ctrl_fsm_cs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/\prefetch_32.prefetch_buffer_i /NS">
+         <obj_property name="ElementShortName">NS[1:0]</obj_property>
+         <obj_property name="ObjectShortName">NS[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/boot_addr_i">
+         <obj_property name="ElementShortName">boot_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">boot_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/fetch_valid">
+         <obj_property name="ElementShortName">fetch_valid</obj_property>
+         <obj_property name="ObjectShortName">fetch_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/fetch_ready">
+         <obj_property name="ElementShortName">fetch_ready</obj_property>
+         <obj_property name="ObjectShortName">fetch_ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/fetch_addr_n">
+         <obj_property name="ElementShortName">fetch_addr_n[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fetch_addr_n[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/fetch_rdata">
+         <obj_property name="ElementShortName">fetch_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fetch_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/\prefetch_32.prefetch_buffer_i /instr_addr_o">
+         <obj_property name="ElementShortName">instr_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/\prefetch_32.prefetch_buffer_i /instr_rdata_i">
+         <obj_property name="ElementShortName">instr_rdata_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr_rdata_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/\prefetch_32.prefetch_buffer_i /instr_req_o">
+         <obj_property name="ElementShortName">instr_req_o</obj_property>
+         <obj_property name="ObjectShortName">instr_req_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/\prefetch_32.prefetch_buffer_i /instr_rvalid_i">
+         <obj_property name="ElementShortName">instr_rvalid_i</obj_property>
+         <obj_property name="ObjectShortName">instr_rvalid_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/id_stage_i/instr">
+         <obj_property name="ElementShortName">instr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/id_stage_i/controller_i/jump_done">
+         <obj_property name="ElementShortName">jump_done</obj_property>
+         <obj_property name="ObjectShortName">jump_done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/id_stage_i/controller_i/perf_jump_o">
+         <obj_property name="ElementShortName">perf_jump_o</obj_property>
+         <obj_property name="ObjectShortName">perf_jump_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/id_stage_i/controller_i/perf_ld_stall_o">
+         <obj_property name="ElementShortName">perf_ld_stall_o</obj_property>
+         <obj_property name="ObjectShortName">perf_ld_stall_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/u_DUT/u_pulpino/pulpino_i/core_region_i/RISCV_CORE/if_stage_i/\prefetch_32.prefetch_buffer_i /CS">
+         <obj_property name="ElementShortName">CS[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
