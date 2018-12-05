@@ -212,3 +212,63 @@ Take a look at the `sw/libs/Arduino_libs` subfolder for more information about t
 ```shell
 ./update-ips.py https://github.com
 ```
+
+## run PULPino on Arty board
+
+1. Update FPGA build environment
+- Define environment variables : `XILINX_PART` and `XILINX_BOARD` by adding `fpga/common/set_board.sh`, you can put it in the end of `~/.bashrc`.
+- add new makefile `fpga/Makefile.arty` 
+- add `fpga/arty_top`: new FPGA top wrapper
+- add `fpga/ips/arty_mmcm` : handles clocks (Arty board uses 100MHz xtal)
+- add `fpga/ips/arty_mem_8192x32` : instruction memory ,keep the same name of xilinx_mem_8192x32 to avoid RTL change.
+
+2. Create new fpga top wrapper 
+- add `fpga/rtl/arty_top.v`
+
+### 2.1 Helloworld
+- connect UART on arty fpga top
+- rename data memory to xilinx_dmem_8192x32 in `rtl/core_region.sv`
+- generate memory init file(.coe) from rtl simulation
+- add `fpga/rtl/tb.sv` for simulation, whereas `tb/uart.sv` is reused.
+
+```shell
+#1 build helloworld apps : `sw/build/apps/helloworld/slm_files`
+    cd sw/build
+    make vcompile
+    make helloworld.vsimc
+
+#2 generate memory init file
+    cd fpga/common
+    ./gen_imem_coe.sh helloworld   -> ips/arty_mem_8192x32/xilinx_mem_8192x32.coe
+    ./gen_dmem_coe.sh helloworld   -> ips/arty_dmem_8192x32/xilinx_dmem_8192x32.coe
+    
+#3 generate bit stream
+    cd fpga
+    make -f Makefile.arty all
+
+```
+
+### 2.2 Boot from SPI-NOR-Flash
+- connect spi master IOs : rtl update for `apb_spi_master` 
+    1. add `output [3:0] spi_master_oen` to control QSPI flash IO direction
+    2. support extended-spi mode : use sdo0 as tx while `sdi1` as rx.
+
+- download flash model of N25Q128A13E(Flash on Arty) from [Micron's website](https://www.micron.com/~/media/documents/products/sim-model/nor-flash/serial/bfm/n25q/n25q128a13e_3v_micronxip_vg12,-d-,tar.gz)
+
+- modify `sw/apps/boot_code/boot_code.c`
+    1. disable `check_spi_flash()` : N25Q128A13E has ID values of 0x20BA18
+    2. enable QSPI by CMD=0x61, value=0x5F 
+    3. set flash start address = 0x400000
+    4. rewrite function `jump_and_start()` : the original function cause rtl
+       simulation hang-up. From the deassembler output , it
+       will get `jr a5` which is not good, the new function will get `jalr a5`.
+       Don't know the root cause for now.
+
+- build the new boot_code file: `rtl/boot_code.sv`
+    ```shell
+    cd fpga/common
+    ./build_bootrom.sh
+    ```
+
+Take a look at the `sw/libs/Arduino_libs` subfolder for more information about
+the status of the currently supported libraries.

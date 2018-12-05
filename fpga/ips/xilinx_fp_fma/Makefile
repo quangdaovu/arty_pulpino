@@ -21,8 +21,6 @@ clean:
 	rm -rf ${PROJECT}.runs
 	rm -rf ${PROJECT}.srcs
 	rm -rf ${PROJECT}.cache
-	rm -rf ${PROJECT}.ip_user_files
-	rm -rf ${PROJECT}.sim
 	rm -rf component.xml
 	rm -rf vivado*.jou
 	rm -rf vivado*.log

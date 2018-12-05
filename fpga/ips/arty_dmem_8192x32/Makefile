@@ -27,5 +27,4 @@ clean:
 	rm -rf vivado*.log
 	rm -rf vivado*.str
 	rm -rf xgui
-	rm -rf *.coe
 
