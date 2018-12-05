@@ -1,2 +1,2 @@
 # arty_pulpino
-PULPino ports that work as standalone version on Arty board.
+PULPino port that works as standalone version on Arty board.
